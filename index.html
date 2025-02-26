@@ -4,8 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikewatching</title>
+
+  <link rel="stylesheet" href="global.css">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
   <h1>🚴🏼‍♀️ Bikewatching</h1>
+  <label for="time-filter">
+    Filter by time:
+    <input type="range" id="time-slider" min="-1" max="1440" step="1" value="-1">
+    <time id="selected-time"></time>
+    <em id="any-time"> (any time)</em>
+  </label>
+  <div id="map">
+    <svg></svg>
+  </div>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="map.js"></script>
+    
 </body>
 </html>
